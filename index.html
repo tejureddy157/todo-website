@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Fixed missing value for width -->
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="stats-container">
+            <div class="details">
+                <h1>TODO APP</h1>
+                <p>KEEP IT UP</p> <!-- Fixed: Changed <P> to <p> for consistency -->
+                <div id="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-number">
+                <p id="numbers">0/0</p> <!-- Placeholder text for stats -->
+            </div>
+        </div>
+
+        <!-- Task Input Form -->
+        <form action="" id="taskForm"> <!-- Added an ID for better targeting in JavaScript -->
+            <input type="text" id="taskinput" placeholder="Write your task here">
+            <button id="newTask" type="submit">+</button>
+        </form>
+
+        <!-- Task List -->
+        <ul id="task-list" class="task-list"></ul> <!-- Added ID to match JavaScript -->
+    </div>
+    
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
